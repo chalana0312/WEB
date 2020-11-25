@@ -3,7 +3,7 @@
 }
 
 header{
-    background:#9CBDD5;
+    background:#92f56b;
     padding: 0.75em;
     text-align:center;
     color: #04830e;
@@ -20,7 +20,7 @@ header{
     padding: 0;
     margin: 0;
     flex-flow: row wrap;
-    background-color:#B9DAF2 ;
+    background-color:#5cf75c ;
 }
 .MainNav li{
     flex-grow:1;
@@ -35,7 +35,7 @@ header{
 }
 
 .MainNav a:hover {
-    background:#EFFAFC;
+    background:#69f769;
 }
 
 #mainImg{
@@ -51,8 +51,8 @@ header{
 
 h2{
     text-align: center;
-    background: #55CCE4;
-    box-shadow:5px 5px cornflowerblue;
+    background: #55e455;
+    box-shadow:5px 5px rgb(42, 245, 42);
     font-family: monospace;
 }
 
@@ -79,7 +79,7 @@ img{
     margin: 0em;
     color: black;
     font-size: medium;
-    background:#9CBDD5; 
+    background:#48f126; 
     border: none;
     text-decoration: none;
     text-align: center;
@@ -89,7 +89,7 @@ img{
 footer{
     display: grid;
     grid-template-columns: auto auto auto;
-    color: #101B53;
+    color: #000000;
     font-size: 15px;
 }
 footer a{
@@ -100,7 +100,7 @@ footer a{
     width: 95%;
     margin: 0em;
     padding: 1em;
-    background:#BBE6E4;
+    background:#3ff539;
     text-align: initial;
     }
 

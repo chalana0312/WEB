@@ -117,7 +117,7 @@ img{
 footer{
     display: grid;
     grid-template-columns: auto auto auto;
-    color: #077e03;
+    color: #0d0e0d;
     font-size: 15px;
 }
 footer a{
@@ -133,13 +133,13 @@ table,th, td {
 }
 
 thead{
-    background: #40f15e;
+    background: #7ef592;
 }
 tbody{
-    background:#6aec4a;
+    background:#9cee87;
 }
 tfoot{
-    background: #65fa47;
+    background: #94f880;
 }
 
 #landing{

@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #B9DAF2;
+    background-color: #5bf174;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -30,7 +30,7 @@ body{
 }
 
 header{
-    background:#9CBDD5;
+    background:#5bec48;
     padding: 0.75em;
     text-align:center;
     color: #16ce35;
@@ -44,14 +44,14 @@ header{
     width: 90%;
     margin: auto;
     padding:1em;
-    background:rgba(255, 255, 255, 0.568);
+    background:rgba(90, 243, 110, 0.904);
 }
 .sect{
     margin: 1em;
     padding: 1em;
-    background: #BBE6E4;
+    background: #61e946;
     text-align: initial;
-    box-shadow:5px 5px #9EDBEE;
+    box-shadow:5px 5px #17b331;
     border-radius: 20px;
 }
 .box{
@@ -68,8 +68,8 @@ header{
 }
 h2{
     text-align: center;
-    background: #55CCE4;
-    box-shadow:5px 5px cornflowerblue;
+    background: #028a14;
+    box-shadow:5px 5px rgb(199, 243, 78);
 }
 #bodyImg{
     background: url(../images/sea3.webp);
@@ -89,7 +89,7 @@ img{
     margin: 0em;
     color: black;
     font-size: medium;
-    background:#9CBDD5; 
+    background:#44f544; 
     border: none;
     text-decoration: none;
     text-align: center;
@@ -99,7 +99,7 @@ img{
 footer{
     display: grid;
     grid-template-columns: auto auto auto;
-    color: #101B53;
+    color: #000000;
     font-size: 15px;
 }
 footer a{
@@ -110,15 +110,15 @@ footer a{
 width: 95%;
 margin: 0em;
 padding: 1em;
-background:#BBE6E4;
+background:#56dd44;
 text-align: initial;
 }
 .list li:nth-of-type(1){
     color: white;
-    background-color: rgb(107, 109, 228);
+    background-color: rgb(40, 122, 53);
 }
 .list li:nth-of-type(2){
-    color: rgb(97, 99, 209);
+    color: rgb(67, 156, 82);
     background-color: white;
 }
 .list li:nth-of-type(3){
