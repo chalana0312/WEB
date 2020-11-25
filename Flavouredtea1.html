@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a Ceylon Tea Marketing site">
+        <title> More Flavoured Tea </title>
+        <link rel="stylesheet" href="styles/CSS.css">
+       <link rel="stylesheet" href="styles/css1.css">
+       <link rel="stylesheet" href="styles/media.css">
+       <link rel="icon" type="image/png" sizes="32x32" href="images/ceylontea32.png">
+       <link rel="manifest" href="images/site.webmanifest">
+       <meta name="msapplication-TileColor" content="#da532c">
+       <meta name="theme-color" content="#ffffff">
+    </head> 
+    <body id="bodyImg">    
+        <div id="container">
+            <header><h1><a href="landing.html" class="head">More Flavoured Tea</a></h1></header>
+            <nav class="MainNav">
+                <ul>
+                    <li><a href="Homepage.html"> Home </a></li>
+                    <li><a href="Typesoftea.html"> Types Of Ceylon Tea </a></li>
+                    <li><a href="SLtea.html"> Tea Manufacturers </a></li>
+                    <li><a href="Buynow.html"> Buy Ceylon Tea </a></li>
+                    <li><a href="Contactus.html"> Contact-Us </a></li>
+                </ul>
+            </nav>
+            <img id="mainImg" src="images/tea_in_cups.jpg" alt="image head">
+            
+            <div id="box1">
+            <section class="sect">
+                <h2>Ice Tea</h2>
+                <p class="pg">
+                    Iced tea is a form of cold tea.Though usually <br> served in a glass with ice,it can refer to any tea<br> that has been chilled or cooled.It may be<br> sweetened with sugar, syrup and/or apple slices. Iced tea is also apopular packaged drink and can<br>  be mixed with flavoredsyrup, with multiple<br>common flavors
+                </p>
+                    <ul class="list">
+                        <li>Country of origin: America</li>
+                        <li>Ingredients: Tea leaves + Flavoures </li>
+                    </ul>
+                
+                <img class="boxImg" src="images/icetea.jpg" alt="Icetea">
+            </section>
+        
+            <section class="sect">
+                <h2>Green Tea</h2>
+                <p class="pg">
+                    Green tea is a type of tea that is made from Camellia sinensis leaves and buds that have not undergone the same withering and oxidation process used to make oolong teas and black teas. Green tea originated in China, but its production and manufacture has spread to other countries in East Asia.
+                </p>
+                    <ul class="list">
+                        <li>Country of origin: China</li>
+                        <li>Ingredients: Tea leaves </li>
+                    </ul>
+                    <img class="boxImg" src="images/greentea.jpg" alt="greentea">
+                
+            </section>
+
+            <section class="sect"> 
+                <h2>Shape Up Tea</h2>
+                <p class="pg">
+                    "Shape Up" contains pure Ceylon tea carefully blended with Goraka (Garcinia Cambogia) and spiced with vanilla. This scientific combination provides fat reduction in the body leading to a dream figure. ...
+                </p>
+                    <ul class="list">
+                        <li>Country of origin: Sri Lanka</li>
+                        <li>Ingredients: Tea leaves + Ayurvedic Medicines </li>
+                    </ul>
+                    <img class="boxImg" src="images/shapeup.jpg" alt="shapeuptea">
+                
+            </section>
+
+            <section class="sect">
+                <h2>Black Tea</h2>
+                <p class="pg">
+                    Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Black tea is generally stronger in flavor than other teas. All four types are made from leaves of the shrub Camellia sinensis.
+                </p>
+                    <ul class="list">
+                        <li>Country of origin: China</li>
+                        <li>Ingredients: Tea leaves + caffeine </li>
+                    </ul>
+                    <img class="boxImg" src="images/blacktea.jpg" alt="blacktea">
+                
+            </section>
+            </div>
+
+            <a href="SLtea.html" class="bcss"> <strong> Back to Tea Manufactures </strong></a>
+
+        </div>
+        <footer id="foot1">
+            <section class="footS">
+                <h5>CEYLON TEA  <br>
+                    CHALANA   KANISHKA<br>
+                    0702007780 <br>
+                    Information and Pictures are from Internet  &copy;<br>
+                    </h5>
+            </section>
+            <section class="footS"><h5>Company <br>
+                <a href="Homepage.html"> About-Us</a><br>
+                <a href="Contactus.html"> Contact-Us</a> <br>
+            </h5></section>
+                <section class="footS"><h5>What we offer <br>
+                    <a href="Typesoftea.html"> Types Of Ceylon Tea</a> <br>
+                    <a href="SLtea.html"> Sri Lankan Tea Manufacturers</a> <br>
+                    <a href="Buynow.html"> Wanna Buy Tea ?</a> <br>
+                </h5>
+            </section>
+        </footer>
+         <!--Service Worker-->
+    <script>
+        if("ServiceWorker" in navigator){
+            window.addEventListener("load",function(){
+                navigator.serviceWorker.register("ServiceWorker.js").then(
+                    function(registeration){
+                        console.log("Service Worker registration Successfull",registeration);
+                    },
+                    function(err){
+                        console.log("Service Worker registration Failed",err);
+                    });
+            });
+        }
+    </script>
+    </body>
+</html>

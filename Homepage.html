@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a Ceylon Tea Marketing site">
+        <link rel="stylesheet" href="styles/CSS.css">
+        <link rel="stylesheet" href="styles/style.css" >
+        <link rel="stylesheet" href="styles/media.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/ceylontea32.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#fffff">
+        <title> CEYLON TEA </title>
+        
+    </head> 
+    <body id="bodyimg">    
+        <div id="container">
+            <header><h1><a href="landing.html" class="head">CEYLON TEA</a></h1></header>
+            <nav class="MainNav">
+                <ul>
+                    <li><a href="Homepage.html"> Home </a></li>
+                    <li><a href="Typesoftea.html"> Types Of Ceylon Tea </a></li>
+                    <li><a href="SLtea.html"> Tea Manufacturers </a></li>
+                    <li><a href="Buynow.html"> Buy Ceylon Tea </a></li>
+                    <li><a href="Contactus.html"> Contact-Us </a></li>
+                </ul>
+            </nav>
+            <img id="mainImg" src="images/teahome.jpg" alt="image head">
+            
+            <article> 
+                <h2> About-Us</h2>
+                    <p>
+                        CEYLON TEA is a newly started tea Factory in Sri Lanka. We provide best of the best quality and the delicious tea for reasonable price.with our enticing variety of Ceylon teas and our undying passion and dedication that we will motivate you all to produce the perfect cup of tea.
+                    </p>
+                    <section>
+                        <h3> Our-Vision</h3>
+                        <p>
+                            Our Vision is to become the top leading tea manufacturing company in Sri Lanka,With our friendly,experienced staff we are moving on to our Vision.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Our-Mission</h3>
+                        <p> 
+                            Our mission at Ceylon Tea Company is to provide our custormers to make the perfect cup of tea on their table.
+                        </p>
+                    </section>
+                </article>
+                
+            <article>
+                <h2> History Of Sri Lankan Tea</h2>
+                <p>
+                    Tea production is one of the main sources of foreign exchange for Sri Lanka (formerly called Ceylon),contributing over US$1.5 billionto the economy of Sri Lanka.It employs, directly or indirectly, over 1 million people, and in 1995 directly employed 215,338 on tea plantations and estates. Sri Lanka is the world's fourth-largest producer of tea. In 1995, it was the world's leading exporter of tea (rather than producer), with 23% of the total world export, but it has since been surpassed by Kenya. The highest production of 340 million kg was recorded in 2013, while the production in 2014 was slightly reduced to 338 million kg.
+The humidity, cool temperatures, and rainfall of the country's central highlands provide a climate that favors the production of high-quality tea. On the other hand, tea produced in low-elevation areas such as Matara, Galle and Ratanapura districts with high rainfall and warm temperature has high level of astringent properties. The tea biomass production itself is higher in low-elevation areas. Such tea is popular in the Middle East. The industry was introduced to the country in 1867 by James Taylor, a British planter who arrived in 1852.Tea planting under smallholder conditions has become popular in the 1970s.
+                </p>
+                <div class="box">  
+                    <section class="boxSection"> 
+                        <h3>Seven Tea Regions Of Sri Lanka</h3>
+                        <img src="images/region-growmap.jpg" alt="Region">
+                        <ol>
+                            <li> Nuwara Eliya</li>
+                            <li> Uda Pussellawa</li>
+                            <li> Dimbula</li>
+                            <li> Uva </li>
+                            <li> Kandy</li>
+                            <li> Sabaragamuwa</li>
+                            <li> Ruhuna</li>
+                        </ol>
+                        
+                    </section>
+                    <section class="boxSection"><h3>  Seven Flavours Of Ceylon Tea</h3>
+                        <img src="images/sevonflavours.jpg" alt="Flavours">
+                        <ul>
+                            <li> Silver Tips</li>
+                            <li> OP-Orange Pekoe</li>
+                            <li> FBOP-Flowery Broken Orange</li>
+                            <li> Gunpowder</li>
+                            <li> Pekoe</li>
+                            <li> Dust One</li>
+                            <li> Golden Tips</li>
+                        </ul>
+                       
+                    </section>
+
+                </div>
+            </article>
+        </div>
+        <footer>
+            <section>
+            <h5>CEYLON TEA  <br>
+            CHALANA   KANISHKA<br>
+            0702007780 <br>
+            Information and Pictures are from Internet  &copy;<br>
+            </h5>
+            </section>
+            <section><h5>Company <br>
+                <a href="Homepage.html"> About-Us</a><br>
+                <a href="Contactus.html"> Contact-Us</a> <br>
+            </h5></section>
+                <section><h5>What we offer <br>
+                <a href="Typesoftea.html"> Types Of Ceylon Tea</a> <br>
+                <a href="SLtea.html"> Sri Lankan Tea Manufacturers</a> <br>
+                <a href="Buynow.html"> Wanna Buy Tea ?</a> <br>
+                </h5>
+            </section>
+        </footer>
+         <!--Service Worker-->
+    <script>
+        if("ServiceWorker" in navigator){
+            window.addEventListener("load",function(){
+                navigator.serviceWorker.register("ServiceWorker.js").then(
+                    function(registeration){
+                        console.log("Service Worker registration Successfull",registeration);
+                    },
+                    function(err){
+                        console.log("Service Worker registration Failed",err);
+                    });
+            });
+        }
+    </script>
+    </body>
+</html>
+<!--This pages displays:
+Navigation links
+About the Business
+And About Sri Lanka-->

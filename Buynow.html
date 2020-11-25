@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a Ceylon Tea Marketing site">
+        <link rel="stylesheet" href="styles/CSS.css">
+        <link rel="stylesheet" href="styles/style.css" >
+        <link rel="stylesheet" href="styles/media.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/ceylontea32.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#fffff">
+        <title> CEYLON TEA </title>
+        
+    </head> 
+    <body id="bodyimg">    
+        <div id="container">
+            <header><h1><a href="landing.html" class="head">BUY CEYLON TEA</a></h1></header>
+            <nav class="MainNav">
+                <ul>
+                    <li><a href="Homepage.html"> Home </a></li>
+                    <li><a href="Typesoftea.html"> Types Of Ceylon Tea </a></li>
+                    <li><a href="SLtea.html"> Tea Manufacturers </a></li>
+                    <li><a href="Buynow.html"> Buy Ceylon Tea </a></li>
+                    <li><a href="Contactus.html"> Contact-Us </a></li>
+                </ul>
+            </nav>
+            <img id="mainImg" src="images/buyceylontea.jpg" alt="image head">
+
+            <article class="Fcontainer">
+                <h2>Pricing And Ordering Tea</h2>
+                <div class="form">
+                    <form method="GET" name="transport">
+                         <fieldset>
+                             <legend> <h3> Please Fill The Form Below</h3></legend>
+                        <fieldset class="boxForm"> 
+                            <legend> <h3>Choice of Tea Manufactures</h3></legend>
+
+                            <label for="taxiChoice"> Please select Tea Type </label><br>
+                            <select id = "taxiChoice" name="taxiChoice">
+                                <option>Select</option>
+                                <option> Dilma, Jones </option>
+                                <option> George Steuart </option>
+                                <option> Malwatte valley plantations </option>
+                                <option> Prestige Ceylon teas </option>
+                                <option> Empire teas </option>
+                            </select>
+                            
+                        </fieldset>
+                        <br>
+
+                        <fieldset class="boxForm">
+                            <legend> <h3>Choice of Packaging Type</h3></legend>
+                            <input type="radio" id="high" name="fuel" value="high"> 
+                            <label for="high">Paper pouches</label>
+                                
+                            <input type="radio" id="medium" name="fuel" checked value="medium">  
+                            <label for="medium">Tins </label>
+                              
+                            <input type="radio" id="low" name="fuel" value="low" >
+                            <label for="low"> Bags </label>
+                                
+                        </fieldset>
+                        <fieldset class="boxForm">
+                            <legend> <h3>Choice of Size</h3></legend>
+                            <input type="radio" id="high" name="fuel" value="high"> 
+                            <label for="high">Small</label>
+                                
+                            <input type="radio" id="medium" name="fuel" checked value="medium">  
+                            <label for="medium">Medium</label>
+                              
+                            <input type="radio" id="low" name="fuel" value="low" >
+                            <label for="low"> Large </label>
+                                
+                        </fieldset>
+
+                        
+                        <fieldset class="boxForm">
+                            <legend><h3>Extras</h3></legend>
+                            <input type="radio" id="oneway" name="stay"> 
+                       <label for="oneway"> mug </label>
+
+                       <input type="radio" id="twoway" name="stay">
+                       <label for="twoway"> silver pin</label>
+                       
+                       <input type="radio" id="overnight" name="stay">
+                       <label for="overnight">Wooden souvenir </label>
+                       
+                        </fieldset>
+
+                         <section class="boxForm">
+                            <h3>
+                                <button class="button" type="button" id="addOrder"> Add to Order</button>
+                                <button class="button" type="button" id="reserve"> Reserve</button>
+                            </h3>
+                            <button type="button" class="button" id="AddtoFav">Add to Favourite</button> <br><br>
+                            <button type="button" class="button" id="orderFav">Order Favourite</button><br><br>
+                            <button type="button" class="button" id="loyalty">Check Loyalty</button><br><br>
+                        </section>
+                    </fieldset><br>
+
+                
+                    </form>
+                </div>
+            </article>
+            <div class="infor">
+              <u><b> Current Taxi(s):</b></u> <br><br>
+               <p id="taxiC"></p>
+               <u><b>Cost of Current Taxi(s):</b></u> <br><br>
+               <p id="taxiCost"></p>
+               <u><b>Overall Order:</b></u> <br><br>
+               <p id="overOrder"></p>
+               
+               <u><b>Overall cost of the order:</b></u> <br><br>
+               <p id="overCost"></p>
+               </div>
+
+               
+        </div>
+
+
+        <footer>
+            <section>
+            <h5>CEYLON TEA  <br>
+            CHALANA   KANISHKA<br>
+            0702007780 <br>
+            Information and Pictures are from Internet  &copy;<br>
+            </h5>
+            </section>
+            <section><h5>Company <br>
+                <a href="Homepage.html"> About-Us</a><br>
+                <a href="Contactus.html"> Contact-Us</a> <br>
+            </h5></section>
+                <section><h5>What we offer <br>
+                <a href="Typesoftea.html"> Types Of Ceylon Tea</a> <br>
+                <a href="SLtea.html"> Sri Lankan Tea Manufacturers</a> <br>
+                <a href="Buynow.html">Want To Buy Tea ?</a> <br>
+                </h5>
+            </section>
+        </footer>
+        <script src="script/main.js"></script>
+         <!--Service Worker-->
+    <script>
+        if("ServiceWorker" in navigator){
+            window.addEventListener("load",function(){
+                navigator.serviceWorker.register("ServiceWorker.js").then(
+                    function(registeration){
+                        console.log("Service Worker registration Successfull",registeration);
+                    },
+                    function(err){
+                        console.log("Service Worker registration Failed",err);
+                    });
+            });
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a Ceylon Tea Marketing site">
+        <title> Welcome To Ceylon Tea </title>
+        <link rel="stylesheet" href="styles/CSS.css">
+        <link rel="stylesheet" href="styles/style.css" >
+        <link rel="stylesheet" href="styles/media.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/ceylontea32.png">
+<link rel="manifest" href="images/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    </head> 
+    <body>    
+        <div>
+            <header><h1><a href="landing.html" class="head">CEYLON TEA</a></h1></header>
+            <nav class="MainNav">
+                <ul>
+                    <li><a href="Homepage.html"> Home </a></li>
+                    <li><a href="Typesoftea.html"> Types Of Ceylon Tea </a></li>
+                    <li><a href="SLtea.html"> Tea Manufacturers </a></li>
+                    <li><a href="Buynow.html"> Buy Ceylon Tea </a></li>
+                    <li><a href="Contactus.html"> Contact-Us </a></li>
+                </ul>
+            </nav>
+            <img id="landing" src="images/great-western-estate.webp" alt="image head">
+        </div>
+        <footer>
+            <section>
+            <h5>CEYLON TEA  <br>
+            CHALANA   KANISHKA<br>
+            0702007780 <br>
+            Information and Pictures are from Internet  &copy;<br>
+            </h5>
+            </section>
+            <section><h5>Company <br>
+                <a href="Homepage.html"> About-Us</a><br>
+                <a href="Contactus.html"> Contact-Us</a> <br>
+            </h5></section>
+                <section><h5>What we offer <br>
+                <a href="Typesoftea.html"> Types Of Ceylon Tea</a> <br>
+                <a href="SLtea.html"> Sri Lankan Tea Manufacturers</a> <br>
+                <a href="Buynow.html"> Wanna Buy Tea ?</a> <br>
+                </h5>
+            </section>
+        </footer>
+         <!--Service Worker-->
+    <script>
+        if("ServiceWorker" in navigator){
+            window.addEventListener("load",function(){
+                navigator.serviceWorker.register("ServiceWorker.js").then(
+                    function(registeration){
+                        console.log("Service Worker registration Successfull",registeration);
+                    },
+                    function(err){
+                        console.log("Service Worker registration Failed",err);
+                    });
+            });
+        }
+    </script>
+    </body>
+</html>
+

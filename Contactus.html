@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a Ceylon Tea Marketing site">
+        <link rel="stylesheet" href="styles/CSS.css">
+        <link rel="stylesheet" href="styles/style.css" >
+        <link rel="stylesheet" href="styles/media.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/ceylontea32.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#fffff">
+        <title> CEYLON TEA </title>
+        
+    </head> 
+    <body id="bodyimg">    
+        <div id="container">
+            <header><h1><a href="landing.html" class="head">CONTACT-US</a></h1></header>
+            <nav class="MainNav">
+                <ul>
+                    <li><a href="Homepage.html"> Home </a></li>
+                    <li><a href="Typesoftea.html"> Types Of Ceylon Tea </a></li>
+                    <li><a href="SLtea.html"> Tea Manufacturers </a></li>
+                    <li><a href="Buynow.html"> Buy Ceylon Tea </a></li>
+                    <li><a href="Contactus.html"> Contact-Us </a></li>
+                </ul>
+            </nav>
+            <img id="mainImg" src="images/callercenter.png" alt="image head">
+
+            <article class="Fcontainer">
+                <h2>Contact-Us</h2>
+                <div class="form">
+                    <form method="GET" name="myForm">
+
+                        <div class="boxForm">
+                        <fieldset id="mainF" >
+                            <legend> <h3>Personal Information</h3></legend>
+                            <label for="name"> Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="Please Enter Your Name Here"> <br><br>
+                            <label for="email"> Email:</label><br>
+                            <input type="email" id="email" name="email" required placeholder="#####@####.com"> <br><br>
+                            <label for="mobile"> Mobile:</label><br>
+                            <input type="tel" id="mobile" name="mobile" maxlength="12" required placeholder="Please Enter Your Contact Number Here"> <br><br>
+                            <label for="country"> Country:</label><br>
+                            <input type="text" id="country" name="country" placeholder="Please Enter Your Country Here"> <br><br>
+                        </fieldset>
+                    </div>
+    
+                        <fieldset class="boxForm">
+                            
+                            <h6><input type="radio" id="contactEmail" name="contact" value="Contact Email"> 
+                                <label for="contactEmail">Contact me through Email only</label><br>
+                               
+                            <input type="radio" id="contactPhone" name="contact" value="Contact Phone"> 
+                            <label for="contactPhone">Contact me through Phone only</label><br>
+                            
+                            <input type="radio" id="contactBoth" name="contact" value="Contact Both"> 
+                            <label for="contactBoth">Contact me via both Email and Phone </label><br></h6>
+                            <input id="submit" type="submit" value="Submit">
+                        </fieldset>
+                </form>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <section>
+        <h5>CEYLON TEA  <br>
+        CHALANA   KANISHKA<br>
+        0702007780 <br>
+        Information and Pictures are from Internet  &copy;<br>
+        </h5>
+        </section>
+        <section><h5>Company <br>
+            <a href="Homepage.html"> About-Us</a><br>
+            <a href="Contactus.html"> Contact-Us</a> <br>
+        </h5></section>
+            <section><h5>What we offer <br>
+            <a href="Typesoftea.html"> Types Of Ceylon Tea</a> <br>
+            <a href="SLtea.html"> Sri Lankan Tea Manufacturers</a> <br>
+            <a href="Buynow.html"> Want To Buy Tea ?</a> <br>
+            </h5>
+        </section>
+    </footer>
+    <script src="script/contact.js"></script>
+     <!--Service Worker-->
+     <script>
+        if("ServiceWorker" in navigator){
+            window.addEventListener("load",function(){
+                navigator.serviceWorker.register("ServiceWorker.js").then(
+                    function(registeration){
+                        console.log("Service Worker registration Successfull",registeration);
+                    },
+                    function(err){
+                        console.log("Service Worker registration Failed",err);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
