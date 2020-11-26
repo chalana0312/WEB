@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="This is a Ceylon Tea Marketing site">
-        <link rel="stylesheet" href="styles/CSS.css">
+        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css" >
         <link rel="stylesheet" href="styles/media.css">
         <link rel="icon" type="image/png" sizes="32x32" href="images/ceylontea32.png">
@@ -29,96 +29,68 @@
             <img id="mainImg" src="images/buyceylontea.jpg" alt="image head">
 
             <article class="Fcontainer">
-                <h2>Pricing And Ordering Tea</h2>
-                <div class="form">
-                    <form method="GET" name="transport">
-                         <fieldset>
-                             <legend> <h3> Please Fill The Form Below</h3></legend>
-                        <fieldset class="boxForm"> 
-                            <legend> <h3>Choice of Tea Manufactures</h3></legend>
-
-                            <label for="taxiChoice"> Please select Tea Type </label><br>
-                            <select id = "taxiChoice" name="taxiChoice">
-                                <option>Select</option>
-                                <option> Dilma, Jones </option>
-                                <option> George Steuart </option>
-                                <option> Malwatte valley plantations </option>
-                                <option> Prestige Ceylon teas </option>
-                                <option> Empire teas </option>
-                            </select>
-                            
+                <main> 
+                    <section id="teamanufact">
+                        <form method="GET">
+                          <fieldset>
+                            <h2>Choose a Tea Brand  </h2>
+                        <p>Dilma Tea : <input type="radio" name="tea" id="DDIL"></p> 
+                        <p>Jones Tea : <input type="radio" name="tea" id="JJON"></p>
+                        <p>George Steuart Tea : <input type="radio" name="tea" id="GST"></p> 
+                        <p>Malwatte Valley Plantations : <input type="radio" name="tea" id="MVT"></p> 
+                        <p>Prestige Ceylon Tea: <input type="radio" name="tea" id="PST"></p>
+                  
+                      </fieldset>
+                      </form>
+                    </section>
+                    <section id="packtype">
+                      <form method="GET">
+                        <fieldset>
+                      <h2> Package Type </h2>
+                      <p>Paper Pouches : <input type="radio" name="package" id="paperp"></p>
+                      <p>Tins : <input type="radio" name="package" id="tin" checked></p>
+                      <p>Bags : <input type="radio" name="package" id="bbg"></p> 
+                    </fieldset>
+                  </form>
+                    </section>
+                    <section id="size">
+                      <form method="GET">
+                        <fieldset>
+                      <h2> Tea Size </h2>
+                      <p>Small : <input type="radio" name="size" id="sml"></p>
+                      <p>Medium : <input type="radio" name="size" id="medi" checked></p>
+                      <p>Large : <input type="radio" name="size" id="lar"></p> 
+                    </fieldset>
+                  </form>
+                    </section>
+                    <section id="extras">
+                      <form method="GET">
+                        <fieldset>
+                          <h2> TEA EXTRAS </h2>
+                          <p>Mugs : <input type="checkbox" id="mug"></p>
+                          <p>Wooden Souvenir : <input type="checkbox" id="wooden" ></p>
+                          <p>Silver Pin : <input type="checkbox" id="silver"></p> 
                         </fieldset>
-                        <br>
-
-                        <fieldset class="boxForm">
-                            <legend> <h3>Choice of Packaging Type</h3></legend>
-                            <input type="radio" id="high" name="fuel" value="high"> 
-                            <label for="high">Paper pouches</label>
-                                
-                            <input type="radio" id="medium" name="fuel" checked value="medium">  
-                            <label for="medium">Tins </label>
-                              
-                            <input type="radio" id="low" name="fuel" value="low" >
-                            <label for="low"> Bags </label>
-                                
-                        </fieldset>
-                        <fieldset class="boxForm">
-                            <legend> <h3>Choice of Size</h3></legend>
-                            <input type="radio" id="high" name="fuel" value="high"> 
-                            <label for="high">Small</label>
-                                
-                            <input type="radio" id="medium" name="fuel" checked value="medium">  
-                            <label for="medium">Medium</label>
-                              
-                            <input type="radio" id="low" name="fuel" value="low" >
-                            <label for="low"> Large </label>
-                                
-                        </fieldset>
-
-                        
-                        <fieldset class="boxForm">
-                            <legend><h3>Extras</h3></legend>
-                            <input type="radio" id="oneway" name="stay"> 
-                       <label for="oneway"> mug </label>
-
-                       <input type="radio" id="twoway" name="stay">
-                       <label for="twoway"> silver pin</label>
-                       
-                       <input type="radio" id="overnight" name="stay">
-                       <label for="overnight">Wooden souvenir </label>
-                       
-                        </fieldset>
-
-                         <section class="boxForm">
-                            <h3>
-                                <button class="button" type="button" id="addOrder"> Add to Order</button>
-                                <button class="button" type="button" id="reserve"> Reserve</button>
-                            </h3>
-                            <button type="button" class="button" id="AddtoFav">Add to Favourite</button> <br><br>
-                            <button type="button" class="button" id="orderFav">Order Favourite</button><br><br>
-                            <button type="button" class="button" id="loyalty">Check Loyalty</button><br><br>
-                        </section>
-                    </fieldset><br>
-
-                
-                    </form>
-                </div>
+                      </form>
+                    </section>
+                  </div>
+                <div>
+                <section><button id="aorder">Add to Order</button></section>
+                <section><button id="order">Place Order</button></section>
+              </div>
+              
+              <fieldset>
+                  <h2>Current Order</h2>
+              <p id="curro"></p></fieldset>
+              <fieldset>
+                  <h2>Current Order Cost</h2>
+              <p id="curoc">0</p></fieldset>
+              <fieldset>
+              <h2> Overall Order</h2>
+              <p id="overo"></p></fieldset>
+              
             </article>
-            <div class="infor">
-              <u><b> Current Taxi(s):</b></u> <br><br>
-               <p id="taxiC"></p>
-               <u><b>Cost of Current Taxi(s):</b></u> <br><br>
-               <p id="taxiCost"></p>
-               <u><b>Overall Order:</b></u> <br><br>
-               <p id="overOrder"></p>
-               
-               <u><b>Overall cost of the order:</b></u> <br><br>
-               <p id="overCost"></p>
-               </div>
-
-               
-        </div>
-
+       
 
         <footer>
             <section>
